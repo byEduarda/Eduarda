@@ -1,12 +1,11 @@
-
 import express from 'express'
 
 const app = express();
 
 app.use(express.json());
 
-app.get('/', (req, res) =>{
-    res.setEncoding("API rodando com sucesso")
+app.get('/', (req, res) => {
+    res.send('API rodando com sucesso')
 });
 
 export default app

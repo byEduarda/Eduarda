@@ -1,2 +1,5 @@
+import app from './infra/server/server';
 
-import app from './infra/server/server.js';
+app.listen(3000, () => {
+    console.log('servidor rodando na porta 3000')
+})
